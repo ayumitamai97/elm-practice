@@ -19,5 +19,15 @@ number =
 --   div [] [ hello
 --          , world]
 
+-- main =
+--   text number
+
+sayHello : String -> String
+sayHello name =
+    String.append "Hello " name
+
+hoge =
+  List.map (\n -> sayHello n) ["Alice", "Bob"]
+
 main =
-  text number
+  div [] ( List.map (\n -> text (n ++ "\n")) hoge )
