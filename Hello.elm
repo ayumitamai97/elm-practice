@@ -8,6 +8,16 @@ hello =
 world =
   div [] [text "world"]
 
+add : Int -> Int -> Int
+add x y =
+  x + y
+
+number =
+  toString ( add 1 2 )
+
+-- main =
+--   div [] [ hello
+--          , world]
+
 main =
-  div [] [ hello
-         , world]
+  text number

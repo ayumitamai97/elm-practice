@@ -1,3 +1,11 @@
+var _user$project$Hello$add = F2(
+	function (x, y) {
+		return x + y;
+	});
+var _user$project$Hello$number = _elm_lang$core$Basics$toString(
+	A2(_user$project$Hello$add, 1, 2));
+var _user$project$Hello$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProgram(
+	_elm_lang$html$Html$text(_user$project$Hello$number));
 var _user$project$Hello$world = A2(
 	_elm_lang$html$Html$div,
 	{ctor: '[]'},
@@ -14,16 +22,3 @@ var _user$project$Hello$hello = A2(
 		_0: _elm_lang$html$Html$text('hello'),
 		_1: {ctor: '[]'}
 	});
-var _user$project$Hello$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProgram(
-	A2(
-		_elm_lang$html$Html$div,
-		{ctor: '[]'},
-		{
-			ctor: '::',
-			_0: _user$project$Hello$hello,
-			_1: {
-				ctor: '::',
-				_0: _user$project$Hello$world,
-				_1: {ctor: '[]'}
-			}
-		}));
